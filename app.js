@@ -20,4 +20,9 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+//Error Page
+app.use("/*", (req, res) => {
+  res.send("Error Page");
+});
+
 module.exports = app;
